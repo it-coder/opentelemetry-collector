@@ -20,5 +20,6 @@ func NewFactory() confmap.ProviderFactory {
 }
 
 func newProvider(set confmap.ProviderSettings) confmap.Provider {
+	
 	return configurablehttpprovider.New(configurablehttpprovider.HTTPScheme, set)
 }
